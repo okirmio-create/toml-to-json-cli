@@ -1,0 +1,29 @@
+{
+  "name": "toml-to-json-cli",
+  "version": "1.0.0",
+  "description": "Convert TOML files to JSON and JSON to TOML",
+  "type": "module",
+  "main": "dist/index.js",
+  "bin": {
+    "toml-to-json-cli": "dist/index.js"
+  },
+  "scripts": {
+    "build": "tsup",
+    "prepublishOnly": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/okirmio-create/toml-to-json-cli.git"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "@iarna/toml": "^2.2.5",
+    "chalk": "^5.3.0",
+    "commander": "^12.1.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.0",
+    "tsup": "^8.3.0",
+    "typescript": "^5.7.0"
+  }
+}
